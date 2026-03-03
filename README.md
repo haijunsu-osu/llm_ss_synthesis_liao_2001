@@ -9,9 +9,10 @@ The goal is to reproduce the numerical synthesis results for the SS chain (pivot
 ## Repository Contents
 
 - `5-ss_platform_liao.pdf` — the paper itself (required reference for the problem statement and dataset).
+- `SS_Synthesis_Mathematica_Prompt.md` — **recommended starting point**; primary prompt/instructions for reproducing the Mathematica workflow.
 - `ss_synthesis.wls` — Mathematica/Wolfram Language implementation of the synthesis procedure.
 - `ss_synthesis.py` — Python implementation (NumPy/SciPy) of the same elimination workflow.
-- `prompt.md` — derivation/implementation notes and constraints for the solver.
+- `prompt.md` — supplemental derivation/implementation notes and constraints for the solver.
 - `synthesis_report.md` — summary of equations, solver design, and computed solutions.
 
 ## Requirements
@@ -23,11 +24,12 @@ The goal is to reproduce the numerical synthesis results for the SS chain (pivot
 
 ## Reproduction Steps
 
-1. Read `5-ss_platform_liao.pdf` for the exact seven-position formulation and notation.
-2. Open `ss_synthesis.wls` in Mathematica 14.3.
-3. Set `useRandomExample = False` to run the paper Table-1 dataset.
-4. Execute the script and collect the real solutions `(L, p, B)`.
-5. Optionally set `useRandomExample = True` to run the planted-root validation case.
+1. Start with `SS_Synthesis_Mathematica_Prompt.md` for the intended workflow and deliverables.
+2. Read `5-ss_platform_liao.pdf` for the exact seven-position formulation and notation.
+3. Open `ss_synthesis.wls` in Mathematica 14.3.
+4. Set `useRandomExample = False` to run the paper Table-1 dataset.
+5. Execute the script and collect the real solutions `(L, p, B)`.
+6. Optionally set `useRandomExample = True` to run the planted-root validation case.
 
 ## Notes
 
